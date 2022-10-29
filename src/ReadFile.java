@@ -1,5 +1,16 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author ahmee
+ */
+
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -28,11 +39,19 @@ public class ReadFile {
             }
             questionList.add(newobj);
         }
+        
 
     }
-    public static  void read(){
+    public static  void read() throws IOException{
         try{
-            File myFile = new File("/home/merengues/git/javaGui/competition/src/data/questions.csv");
+            // Ubuntu
+            //File myFile = new File("/home/merengues/git/javaGui/competition/src/data/questions.csv");
+            // Windows    C:\Users\ahmee\Downloads\quiz_game-main\quiz_game-main\src\data
+            // Windows "C:/Users/ahmee/OneDrive/Dokument/NetBeansProjects/QuizeGame1/src/data/questions.csv"
+            String path = new java.io.File(".").getCanonicalPath();
+            path = path + "/src/data/questions.csv";
+            System.out.println("================== " + path);
+            File myFile = new File(path);
             Scanner myReader = new Scanner(myFile);
             while (myReader.hasNextLine()){
                 String data = myReader.nextLine();
@@ -48,3 +67,4 @@ public class ReadFile {
     }
 
 }
+

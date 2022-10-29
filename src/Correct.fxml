@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CorrectController">
+   <children>
+      <Label layoutX="66.0" layoutY="100.0" lineSpacing="8.0" prefHeight="174.0" prefWidth="467.0" style="-fx-background-color: white;" text="Correct! You win 100$" textFill="#3e9611" underline="true" wrapText="true">
+         <font>
+            <Font name="Algerian" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClose" layoutX="187.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnCloseClicked" prefHeight="75.0" prefWidth="246.0" style="-fx-background-color: #ff5733;" text="Get Your 100$">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

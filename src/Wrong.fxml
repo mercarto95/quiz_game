@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ff5733;;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WrongController">
+   <children>
+      <Button fx:id="btnClose" layoutX="197.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnCloseClicked" prefHeight="87.0" prefWidth="216.0" style="-fx-background-color: green;" text="Show Correct Answer">
+         <font>
+            <Font name="Algerian" size="26.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="122.0" layoutY="81.0" prefHeight="118.0" prefWidth="356.0" style="-fx-background-color: white;" text="Wrong Answer!!" textFill="#cc1515">
+         <font>
+            <Font name="Algerian" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCorrectAnswer" layoutX="122.0" layoutY="216.0" prefHeight="50.0" prefWidth="362.0" text="" textFill="#f8ffdd" wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

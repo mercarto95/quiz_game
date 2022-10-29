@@ -1,8 +1,19 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author ahmee
+ */
+
 public class Question {
     private int numOfQuestion;
     private String question;
     private String[] alternativs;
     private String rigtAlternative;
+    
 
     public int getNumOfQuestion() {
         return numOfQuestion;
@@ -15,6 +26,8 @@ public class Question {
 
 
     }
+    
+   
 
     public Question() {}
     public Question(int numOfQuestion, String question, String[] alternativs, String rigntAlternative) {
@@ -54,6 +67,7 @@ public class Question {
     public void setRigtAlternative(String rigtAlternative) {
         this.rigtAlternative = rigtAlternative;
     }
-
+ 
 
 }
+
